@@ -1,4 +1,4 @@
-import { ReceiptsTable } from "@/table";
+import { ReceiptsTable } from "@/components/table";
 
 export default function Home() {
   return (
