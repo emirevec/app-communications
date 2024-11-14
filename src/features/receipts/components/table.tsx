@@ -1,3 +1,5 @@
+"use client";
+
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react";
 
 const rows = [
@@ -43,18 +45,22 @@ const columns = [
   },
 ]
 
-export default function App() {
+export default function Receipts() {
   return (
     <Table aria-label="Example table with dynamic content">
-      <TableHeader columns={columns}>
-        {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
+      <TableHeader>
+        {columns.map((column) => (
+          <TableColumn key={column.key}>{column.label}</TableColumn>
+        ))}
       </TableHeader>
-      <TableBody items={rows}>
-        {(item) => (
+      <TableBody>
+        {rows.map((item) => (
           <TableRow key={item.key}>
-            {(columnKey) => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}
+            {columns.map((column) => (
+              <TableCell key={column.key}>{item[column.key]}</TableCell>
+            ))}
           </TableRow>
-        )}
+        ))}
       </TableBody>
     </Table>
   );
