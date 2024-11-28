@@ -35,7 +35,7 @@ export default function OrdersList(){
     products: "+"
   }))
   return (
-    <Table aria-label="Example table with dynamic content">
+    <Table isStriped aria-label="Example table with dynamic content">
       <TableHeader>
         {columns.map((column) => (
           <TableColumn key={column.key}>{column.label}</TableColumn>
