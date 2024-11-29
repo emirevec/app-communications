@@ -5,7 +5,7 @@
  */
 "use client"
 
-//Import statement
+//Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
 import { orderListMock } from "../mocks"
 
@@ -16,7 +16,7 @@ import { orderListMock } from "../mocks"
  * @returns {JSX.Element} A table containing order details.
  * 
 */
-export default function OrdersList(){
+export default function OrdersList(): JSX.Element{
   // Generate column definitions from the mock data keys
   const columns = Object.keys(orderListMock[0]).map((key) => ({
     key: key,
@@ -35,7 +35,7 @@ export default function OrdersList(){
     products: "+"
   }))
   return (
-    <Table isStriped aria-label="Example table with dynamic content">
+    <Table className="m-4" aria-label="Example table with dynamic content">
       <TableHeader>
         {columns.map((column) => (
           <TableColumn key={column.key}>{column.label}</TableColumn>
