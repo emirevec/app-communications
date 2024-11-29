@@ -15,11 +15,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
-    darkMode: "class",
-    plugins: [nextui()]
   },
-  plugins: [
-    
-  ],
+  darkMode: "class",
+  plugins: [nextui()]
 };
 export default config;
