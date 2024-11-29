@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Providers } from "./providers";
 import "./globals.css";
+import { Providers } from "./providers";
 import { html } from "framer-motion/client";
 
 export const metadata: Metadata = {
@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) {
   return (
-    <html lang="en" className="light">
-      <body>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
+      <html lang="en" className="light">
+        <body>
+          <Providers>
+            {children}
+          </Providers>
+        </body>
+      </html>
   )
 }
