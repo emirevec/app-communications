@@ -7,7 +7,7 @@
 
 //Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
-import { orderListMock } from "../mocks"
+import { orderListMock } from "../db/mocks"
 
 /**
  * OrdersList Component
@@ -16,7 +16,7 @@ import { orderListMock } from "../mocks"
  * @returns {JSX.Element} A table containing order details.
  * 
 */
-export default function OrdersList(): JSX.Element{
+export function OrdersList(): JSX.Element{
   // Generate column definitions from the mock data keys
   const columns = Object.keys(orderListMock[0]).map((key) => ({
     key: key,

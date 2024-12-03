@@ -1,5 +1,4 @@
-import OrdersFilters from "@/features/orders/components/OrdersFilters"
-import OrdersList from "@/features/orders/components/OrdersList"
+import { OrdersFilters, OrdersList } from "@/features/orders/components"
 
 export default function Home() {
   return (

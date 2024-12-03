@@ -14,7 +14,7 @@ import {Button, Card, CardBody, DateRangePicker, Input} from "@nextui-org/react"
  * @returns {JSX.Element} A card containing order filters.
  * 
 */
-export default function OrdersFilters(): JSX.Element{
+export function OrdersFilters(): JSX.Element{
   return(
     <Card className="m-1 mb-4 flex flex-col p-4 gap-4">
       <DateRangePicker className="mb-2" labelPlacement="outside" label="Order date"/>
