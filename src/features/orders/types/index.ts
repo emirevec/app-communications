@@ -1,7 +1,2 @@
-import type { product } from './product'
-import type { order } from './order'
-
-export {
-  product,
-  order
-}
+export type { product } from './product'
+export type { order } from './order'

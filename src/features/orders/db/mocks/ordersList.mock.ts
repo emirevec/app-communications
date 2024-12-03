@@ -1,4 +1,4 @@
-import type { order } from '../types'
+import type { order } from '../../types'
 
 export const orderListMock: order[] = [
   {
