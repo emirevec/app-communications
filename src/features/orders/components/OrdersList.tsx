@@ -8,6 +8,7 @@
 //Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
 import { orderListMock } from "../db/mocks"
+import { getColumnsLabelArray } from "../util/getColumnsLabel"
 
 /**
  * OrdersList Component
@@ -18,13 +19,7 @@ import { orderListMock } from "../db/mocks"
 */
 export function OrdersList(): JSX.Element{
   // Generate column definitions from the mock data keys
-  const columns = Object.keys(orderListMock[0]).map((key) => ({
-    key: key,
-    label: key
-      .split("_")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ")
-  }))
+  const columns = getColumnsLabelArray(orderListMock)
   // Format mock data into rows for the table
   const rows = orderListMock.map((order) => ({
     key: order.order_number,
