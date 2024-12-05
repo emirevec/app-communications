@@ -8,7 +8,7 @@
 //Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
 import { orderListMock } from "../db/mocks"
-import { getColumnsLabelArray } from "../util/getColumnsLabel"
+import { getColumnsLabelArray, addKeyForMapping } from "../util/formatOrdersForUI"
 
 /**
  * OrdersList Component
@@ -18,17 +18,10 @@ import { getColumnsLabelArray } from "../util/getColumnsLabel"
  * 
 */
 export function OrdersList(): JSX.Element{
-  // Generate column definitions from the mock data keys
+  // Generate column definitions from the data keys.
   const columns = getColumnsLabelArray(orderListMock)
-  // Format mock data into rows for the table
-  const rows = orderListMock.map((order) => ({
-    key: order.order_number,
-    order_number: order.order_number,
-    billing_full_name: order.billing_full_name,
-    order_total: `$${order.order_total.toFixed(2)}`,
-    order_date: order.order_date,
-    products: "+"
-  }))
+  // Format data into rows for the table.
+  const rows = addKeyForMapping(orderListMock)
   return (
     <Table className="m-4" aria-label="Example table with dynamic content">
       <TableHeader>

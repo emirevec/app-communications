@@ -6,7 +6,7 @@
 
 // Import statements
 import {Button, Card, CardBody, DateRangePicker, Input} from "@nextui-org/react";
-import { getColumnsLabelObject } from "../util/getColumnsLabel"
+import { getColumnsLabelObject } from "../util/formatOrdersForUI"
 import { orderListMock } from "../db/mocks"
 
 /**
@@ -18,7 +18,6 @@ import { orderListMock } from "../db/mocks"
 */
 export function OrdersFilters(): JSX.Element{
   const columns = getColumnsLabelObject(orderListMock)
-  //console.log(columns)
   return(
     <Card className="m-1 mb-4 flex flex-col p-4 gap-4">
       <DateRangePicker className="mb-2" labelPlacement="outside" label="Order date"/>
