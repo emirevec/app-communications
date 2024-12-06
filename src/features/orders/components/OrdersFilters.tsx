@@ -8,6 +8,7 @@
 import {Button, Card, CardBody, DateRangePicker, Input} from "@nextui-org/react";
 import { getColumnsLabelObject } from "../util/formatOrdersForUI"
 import { orderListMock } from "../db/mocks"
+import { Order } from './Order'
 
 /**
  * OrdersFilters Component
@@ -24,6 +25,7 @@ export function OrdersFilters(): JSX.Element{
       <Input className="mb-2"  labelPlacement="outside" label={`${columns.billing_full_name}`} placeholder="John Doe"/>
       <Input className="mb-2" labelPlacement="outside" label={`${columns.order_number}`} placeholder="11321"/>
       <Button>Filter</Button>
+      <Order/>
     </Card>
   )
 }
