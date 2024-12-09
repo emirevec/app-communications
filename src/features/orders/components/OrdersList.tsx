@@ -9,6 +9,7 @@
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
 import { orderListMock } from "../db/mocks"
 import { getColumnsLabelArray, addKeyForMapping } from "../util/formatOrdersForUI"
+import { OrderDetail } from "./"
 
 /**
  * OrdersList Component
@@ -21,7 +22,7 @@ export function OrdersList(): JSX.Element{
   // Generate column definitions from the data keys.
   const columns = getColumnsLabelArray(orderListMock)
   // Format data into rows for the table.
-  const rows = addKeyForMapping(orderListMock)
+  const orderListWithKey = addKeyForMapping(orderListMock)
   return (
     <Table className="m-4" aria-label="Example table with dynamic content">
       <TableHeader>
@@ -30,11 +31,16 @@ export function OrdersList(): JSX.Element{
         ))}
       </TableHeader>
       <TableBody>
-        {rows.map((item) => (
-          <TableRow key={item.key}>
-            {columns.map((column) => (
-              <TableCell key={column.key}>{item[column.key]}</TableCell>
-            ))}
+        {orderListWithKey.map((order) => (
+          <TableRow key={order.key}>
+              <TableCell key={order.order_number}>{order.order_number}</TableCell>
+              <TableCell key="Products detail">
+                <OrderDetail order={order}></OrderDetail>
+              </TableCell>
+              <TableCell key={order.billing_full_name}>{order.billing_full_name}</TableCell>
+              <TableCell key={order.order_total}>{`$${order.order_total.toFixed(2)}`}</TableCell>
+              <TableCell key={order.order_date}>{order.order_date}</TableCell>
+              
           </TableRow>
         ))}
       </TableBody>
