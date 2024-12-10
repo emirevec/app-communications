@@ -1,6 +1,6 @@
 /**
- * @file Order Component
- * @module Order
+ * @file OrderDetail Component
+ * @module OrderDetail
  * @description Modal for rendering order's content.
  */
 "use client"
@@ -17,7 +17,7 @@ interface OrderProps {
 }
 
 /**
- * Order Component
+ * OrderDetail Component
  *
  * @description The `Order` component opens a modal for rendering order's content.
  * @returns {JSX.Element} A modal containing full order details.
