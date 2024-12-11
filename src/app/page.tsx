@@ -1,6 +1,6 @@
 import { OrdersFilters, OrdersList } from "@/features/orders/components"
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <h1>CommunApp</h1>
