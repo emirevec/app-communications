@@ -57,13 +57,13 @@ export function OrderDetail({ order: order }: OrderProps): JSX.Element {
                       <TableRow key={product.product_name}>
                         <TableCell key={product.qty}>{product.qty}</TableCell>
                         <TableCell key={product.product_name}>{product.product_name}</TableCell>
-                        <TableCell key={product.price}>{`$ ${product.price.toFixed(2)}`}</TableCell>
+                        <TableCell key={product.price}>{product.price}</TableCell>
                         <TableCell key="Subtotal">{product.price * product.qty}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
                 </Table>
-                <p>{`$ ${order.order_total.toFixed(2)}`}</p>
+                {/* <p>{`$ ${order.order_total.toFixed(2)}`}</p> */}
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

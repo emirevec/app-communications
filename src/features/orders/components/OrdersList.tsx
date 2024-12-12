@@ -10,6 +10,11 @@ import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} 
 import { orderListMock } from "../db/mocks"
 import { getColumnsLabelArray, addKeyForMapping } from "../util/formatOrdersForUI"
 import { OrderDetail } from "./"
+import { type order } from '../types'
+
+interface OrderListProps {
+  orders: order[]
+}
 
 /**
  * OrdersList Component
@@ -18,11 +23,11 @@ import { OrderDetail } from "./"
  * @returns {JSX.Element} A table containing order details.
  * 
 */
-export function OrdersList(): JSX.Element{
+export function OrdersList({orders}: OrderListProps): JSX.Element{
   // Generate column definitions from the data keys.
-  const columns = getColumnsLabelArray(orderListMock)
+  const columns = getColumnsLabelArray(orders)
   // Format data into rows for the table.
-  const orderListWithKey = addKeyForMapping(orderListMock)
+  const orderListWithKey = addKeyForMapping(orders)
   return (
     <Table className="m-4" aria-label="Example table with dynamic content">
       <TableHeader>
@@ -38,7 +43,7 @@ export function OrdersList(): JSX.Element{
                 <OrderDetail order={order}></OrderDetail>
               </TableCell>
               <TableCell key={order.billing_full_name}>{order.billing_full_name}</TableCell>
-              <TableCell key={order.order_total}>{`$${order.order_total.toFixed(2)}`}</TableCell>
+              <TableCell key={order.order_total}>{order.order_total}</TableCell>
               <TableCell key={order.order_date}>{order.order_date}</TableCell>
               
           </TableRow>

@@ -22,7 +22,26 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
       throw new Error(`Error fetching orders: ${response.status} ${response.statusText}. Details: ${errorDetails}`);
     }
 
-    return await response.json();
+    //Filter by Siempreverde and Seres sellers
+    const orders = await response.json()
+    const ordersChild = orders.filter((order: any) => order.parent_id !== 0 && order.store.id === 1)
+    const ordersSV = ordersChild.map((order: any)=>({
+      order_number: order.id,
+      products: [
+        {
+          seller: "Siempreverde",
+          qty: 1,
+          product_name: "Bolsón 4/5 kg Agroecológico + Bolsón de Pesada 3 kg + Maple de Huevos de gallinas pastoriles",
+          price: 21000.00,
+          tags: "Agroecológico,PAC"
+        }
+      ],
+      billing_full_name: order.billing.first_name + " " + order.billing.last_name,
+      order_total: order.total,
+      order_date: order.date_created
+    }))
+
+    return await ordersSV
   } catch (error) {
     console.error("Error fetching WooCommerce orders:", error);
     throw error;
