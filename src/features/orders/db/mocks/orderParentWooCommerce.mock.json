@@ -1,0 +1,602 @@
+{
+    "id": 11692,
+    "parent_id": 0,
+    "status": "processing",
+    "currency": "ARS",
+    "version": "9.4.1",
+    "prices_include_tax": false,
+    "date_created": "2024-12-11T16:14:04",
+    "date_modified": "2024-12-11T16:18:42",
+    "discount_total": "0.00",
+    "discount_tax": "0.00",
+    "shipping_total": "0.00",
+    "shipping_tax": "0.00",
+    "cart_tax": "0.00",
+    "total": "60830.00",
+    "total_tax": "0.00",
+    "customer_id": 70,
+    "order_key": "wc_order_EDVhLIvWzdJzT",
+    "billing": {
+        "first_name": "Belen",
+        "last_name": "Teha",
+        "company": "",
+        "address_1": "Hudson 818",
+        "address_2": "",
+        "city": "Buenos Aires",
+        "state": "B",
+        "postcode": "1686",
+        "country": "AR",
+        "email": "tehabelen@gmail.com",
+        "phone": "01151807619"
+    },
+    "shipping": {
+        "first_name": "",
+        "last_name": "",
+        "company": "",
+        "address_1": "",
+        "address_2": "",
+        "city": "",
+        "state": "",
+        "postcode": "",
+        "country": "",
+        "phone": ""
+    },
+    "payment_method": "",
+    "payment_method_title": "",
+    "transaction_id": "",
+    "customer_ip_address": "",
+    "customer_user_agent": "",
+    "created_via": "admin",
+    "customer_note": "",
+    "date_completed": null,
+    "date_paid": "2024-12-11T16:18:37",
+    "cart_hash": "",
+    "number": "11692",
+    "meta_data": [
+        {
+            "id": 21411,
+            "key": "_wc_order_attribution_source_type",
+            "value": "admin"
+        },
+        {
+            "id": 21412,
+            "key": "has_sub_order",
+            "value": "1"
+        }
+    ],
+    "line_items": [
+        {
+            "id": 17983,
+            "name": "Bolsón de 5kg + Maple de huevos de gallinas pastoriles",
+            "product_id": 7697,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "17640.00",
+            "subtotal_tax": "0.00",
+            "total": "17640.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198535,
+                    "key": "_reduced_stock",
+                    "value": "1",
+                    "display_key": "_reduced_stock",
+                    "display_value": "1"
+                }
+            ],
+            "sku": "",
+            "price": 17640,
+            "image": {
+                "id": "10741",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/06/WhatsApp-Image-2024-10-25-at-10.29.36-PM-2.jpeg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17984,
+            "name": "Batata Boniato/Beauregard 1kg Agroecológica",
+            "product_id": 6479,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "2000.00",
+            "subtotal_tax": "0.00",
+            "total": "2000.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 2000,
+            "image": {
+                "id": "6480",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/03/batatazanahoria.jpeg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17985,
+            "name": "Mango agroecológico sin fraccionar, precio por kg",
+            "product_id": 11489,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "5120.00",
+            "subtotal_tax": "0.00",
+            "total": "5120.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 5120,
+            "image": {
+                "id": "11491",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/12/mangopcr.png"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17986,
+            "name": "Naranja 1 kg agroecológica",
+            "product_id": 5143,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "1370.00",
+            "subtotal_tax": "0.00",
+            "total": "1370.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 1370,
+            "image": {
+                "id": "10755",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/01/naranjapcr.png"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17987,
+            "name": "Zapallito 1kg agroecológico",
+            "product_id": 5971,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "1200.00",
+            "subtotal_tax": "0.00",
+            "total": "1200.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 1200,
+            "image": {
+                "id": "8834",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/03/IMG_20240309_150453_PORTRAIT-scaled.jpg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17988,
+            "name": "Chucrut \"Herr Chuc\" 360g",
+            "product_id": 8244,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "4400.00",
+            "subtotal_tax": "0.00",
+            "total": "4400.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 4400,
+            "image": {
+                "id": "8245",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/07/chucrut.jpeg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17989,
+            "name": "Budín de Algarroba y tropezones de Chocolate",
+            "product_id": 8498,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "6500.00",
+            "subtotal_tax": "0.00",
+            "total": "6500.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 6500,
+            "image": {
+                "id": "7482",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/01/IMG-20240523-WA0003.jpg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17990,
+            "name": "Ñoquis caseros - Semolín, Remolacha",
+            "product_id": 5430,
+            "variation_id": 5596,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "1600.00",
+            "subtotal_tax": "0.00",
+            "total": "1600.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198455,
+                    "key": "tipo",
+                    "value": "Semolín",
+                    "display_key": "Tipo",
+                    "display_value": "Semolín"
+                },
+                {
+                    "id": 198456,
+                    "key": "sabor",
+                    "value": "Remolacha",
+                    "display_key": "Sabor",
+                    "display_value": "Remolacha"
+                }
+            ],
+            "sku": "",
+            "price": 1600,
+            "image": {
+                "id": 5431,
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-21-at-17.22.54-1.jpeg"
+            },
+            "parent_name": "Ñoquis caseros"
+        },
+        {
+            "id": 17991,
+            "name": "Ñoquis caseros - Integral, Espinaca",
+            "product_id": 5430,
+            "variation_id": 5601,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "2200.00",
+            "subtotal_tax": "0.00",
+            "total": "2200.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198466,
+                    "key": "tipo",
+                    "value": "Integral",
+                    "display_key": "Tipo",
+                    "display_value": "Integral"
+                },
+                {
+                    "id": 198467,
+                    "key": "sabor",
+                    "value": "Espinaca",
+                    "display_key": "Sabor",
+                    "display_value": "Espinaca"
+                }
+            ],
+            "sku": "",
+            "price": 2200,
+            "image": {
+                "id": 5431,
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-21-at-17.22.54-1.jpeg"
+            },
+            "parent_name": "Ñoquis caseros"
+        },
+        {
+            "id": 17992,
+            "name": "Acondicionador sólido",
+            "product_id": 4739,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "4300.00",
+            "subtotal_tax": "0.00",
+            "total": "4300.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 4300,
+            "image": {
+                "id": "10766",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/01/acondicionadorpcr.png"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17993,
+            "name": "Maiz frito 250 grs",
+            "product_id": 9069,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "3500.00",
+            "subtotal_tax": "0.00",
+            "total": "3500.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 3500,
+            "image": {
+                "id": "9070",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/08/maiz-frito.jpeg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17994,
+            "name": "Agua Micelar 125cc",
+            "product_id": 6246,
+            "variation_id": 0,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "5000.00",
+            "subtotal_tax": "0.00",
+            "total": "5000.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [],
+            "sku": "",
+            "price": 5000,
+            "image": {
+                "id": "6229",
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/03/WhatsApp-Image-2021-07-07-at-22.49.36.jpeg"
+            },
+            "parent_name": null
+        },
+        {
+            "id": 17995,
+            "name": "Jabón 90grs - Lavanda",
+            "product_id": 6434,
+            "variation_id": 7128,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "1800.00",
+            "subtotal_tax": "0.00",
+            "total": "1800.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198504,
+                    "key": "aroma",
+                    "value": "Lavanda",
+                    "display_key": "Aroma",
+                    "display_value": "Lavanda"
+                }
+            ],
+            "sku": "",
+            "price": 1800,
+            "image": {
+                "id": 6226,
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/03/WhatsApp-Image-2022-03-10-at-10.12.30-PM.jpeg"
+            },
+            "parent_name": "Jabón 90grs"
+        },
+        {
+            "id": 17996,
+            "name": "Jabón 90grs - Arcilla verde",
+            "product_id": 6434,
+            "variation_id": 7127,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "1800.00",
+            "subtotal_tax": "0.00",
+            "total": "1800.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198514,
+                    "key": "aroma",
+                    "value": "Arcilla verde",
+                    "display_key": "Aroma",
+                    "display_value": "Arcilla verde"
+                }
+            ],
+            "sku": "",
+            "price": 1800,
+            "image": {
+                "id": 6226,
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/03/WhatsApp-Image-2022-03-10-at-10.12.30-PM.jpeg"
+            },
+            "parent_name": "Jabón 90grs"
+        },
+        {
+            "id": 17997,
+            "name": "Jabón 90grs - Caléndula",
+            "product_id": 6434,
+            "variation_id": 7131,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "1800.00",
+            "subtotal_tax": "0.00",
+            "total": "1800.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198524,
+                    "key": "aroma",
+                    "value": "Caléndula",
+                    "display_key": "Aroma",
+                    "display_value": "Caléndula"
+                }
+            ],
+            "sku": "",
+            "price": 1800,
+            "image": {
+                "id": 6226,
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/03/WhatsApp-Image-2022-03-10-at-10.12.30-PM.jpeg"
+            },
+            "parent_name": "Jabón 90grs"
+        },
+        {
+            "id": 17998,
+            "name": "Plantines Agroecológicos - Orégano",
+            "product_id": 8913,
+            "variation_id": 8916,
+            "quantity": 1,
+            "tax_class": "",
+            "subtotal": "600.00",
+            "subtotal_tax": "0.00",
+            "total": "600.00",
+            "total_tax": "0.00",
+            "taxes": [],
+            "meta_data": [
+                {
+                    "id": 198534,
+                    "key": "tipo",
+                    "value": "Orégano",
+                    "display_key": "Tipo",
+                    "display_value": "Orégano"
+                }
+            ],
+            "sku": "",
+            "price": 600,
+            "image": {
+                "id": 9089,
+                "src": "https://hsv.com.ar/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-31-at-2.51.08-PM.jpeg"
+            },
+            "parent_name": "Plantines Agroecológicos"
+        }
+    ],
+    "tax_lines": [],
+    "shipping_lines": [],
+    "fee_lines": [],
+    "coupon_lines": [],
+    "refunds": [],
+    "payment_url": "https://hsv.com.ar/checkout/order-pay/11692/?pay_for_order=true&key=wc_order_EDVhLIvWzdJzT",
+    "is_editable": false,
+    "needs_payment": false,
+    "needs_processing": true,
+    "date_created_gmt": "2024-12-11T19:14:04",
+    "date_modified_gmt": "2024-12-11T19:18:42",
+    "date_completed_gmt": null,
+    "date_paid_gmt": "2024-12-11T19:18:37",
+    "currency_symbol": "$",
+    "stores": [
+        {
+            "id": 1,
+            "name": "Siempreverde",
+            "shop_name": "Siempreverde",
+            "url": "https://hsv.com.ar/vendedor/siempreverde/",
+            "address": {
+                "street_1": "",
+                "street_2": "",
+                "city": "",
+                "zip": "",
+                "country": "AR",
+                "state": ""
+            }
+        },
+        {
+            "id": 6,
+            "name": "Edith Di Genova",
+            "shop_name": "Sarama",
+            "url": "https://hsv.com.ar/vendedor/sarama/",
+            "address": {
+                "street_1": "",
+                "street_2": "",
+                "city": "",
+                "zip": "",
+                "country": "",
+                "state": ""
+            }
+        },
+        {
+            "id": 3,
+            "name": "Aime Bustos",
+            "shop_name": "Bread Ladum",
+            "url": "https://hsv.com.ar/vendedor/bread-ladum/",
+            "address": {
+                "street_1": "",
+                "street_2": "",
+                "city": "",
+                "zip": "",
+                "country": "AR",
+                "state": "B"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Flor Grom",
+            "shop_name": "Seres",
+            "url": "https://hsv.com.ar/vendedor/seres/",
+            "address": {
+                "street_1": "",
+                "street_2": "",
+                "city": "Hurlingham",
+                "zip": "",
+                "country": "AR",
+                "state": "B"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Agus",
+            "shop_name": "Nahuen Libres de Gluten y Frutos Secos",
+            "url": "https://hsv.com.ar/vendedor/nahuen/",
+            "address": {
+                "street_1": "2521 AV, MARQUEZ",
+                "street_2": "",
+                "city": "Pablo Podesta",
+                "zip": "1656",
+                "country": "AR",
+                "state": "B"
+            }
+        },
+        {
+            "id": 11,
+            "name": "Teresa Gomez",
+            "shop_name": "Caricias de Angel",
+            "url": "https://hsv.com.ar/vendedor/caricias-de-angel/",
+            "address": {
+                "street_1": "",
+                "street_2": "",
+                "city": "",
+                "zip": "",
+                "country": "AR",
+                "state": "B"
+            }
+        }
+    ],
+    "store": [],
+    "_links": {
+        "self": [
+            {
+                "href": "https://hsv.com.ar/wp-json/wc/v3/orders/11692",
+                "targetHints": {
+                    "allow": [
+                        "GET",
+                        "POST",
+                        "PUT",
+                        "PATCH",
+                        "DELETE"
+                    ]
+                }
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://hsv.com.ar/wp-json/wc/v3/orders"
+            }
+        ],
+        "customer": [
+            {
+                "href": "https://hsv.com.ar/wp-json/wc/v3/customers/70"
+            }
+        ]
+    }
+}

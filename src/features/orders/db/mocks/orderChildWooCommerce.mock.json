@@ -1,0 +1,474 @@
+{
+  "id": 11693,
+  "parent_id": 11692,
+  "status": "processing",
+  "currency": "ARS",
+  "version": "9.4.1",
+  "prices_include_tax": false,
+  "date_created": "2024-12-11T16:18:42",
+  "date_modified": "2024-12-11T16:18:44",
+  "discount_total": "0.00",
+  "discount_tax": "0.00",
+  "shipping_total": "0.00",
+  "shipping_tax": "0.00",
+  "cart_tax": "0.00",
+  "total": "32330.00",
+  "total_tax": "0.00",
+  "customer_id": 70,
+  "order_key": "wc_order_ngTGqUqHHiFpm",
+  "billing": {
+      "first_name": "Belen",
+      "last_name": "Teha",
+      "company": "",
+      "address_1": "Hudson 818",
+      "address_2": "",
+      "city": "Buenos Aires",
+      "state": "B",
+      "postcode": "1686",
+      "country": "AR",
+      "email": "tehabelen@gmail.com",
+      "phone": "01151807619"
+  },
+  "shipping": {
+      "first_name": "",
+      "last_name": "",
+      "company": "",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "state": "",
+      "postcode": "",
+      "country": "",
+      "phone": ""
+  },
+  "payment_method": "",
+  "payment_method_title": "",
+  "transaction_id": "",
+  "customer_ip_address": "",
+  "customer_user_agent": "",
+  "created_via": "dokan",
+  "customer_note": "",
+  "date_completed": null,
+  "date_paid": "2024-12-11T16:18:42",
+  "cart_hash": "",
+  "number": "11693",
+  "meta_data": [
+      {
+          "id": 21413,
+          "key": "_dokan_vendor_id",
+          "value": "1"
+      },
+      {
+          "id": 21416,
+          "key": "_wc_order_attribution_source_type",
+          "value": "admin"
+      },
+      {
+          "id": 21417,
+          "key": "shipping_fee_recipient",
+          "value": "admin"
+      },
+      {
+          "id": 21419,
+          "key": "shipping_tax_fee_recipient",
+          "value": "admin"
+      },
+      {
+          "id": 21418,
+          "key": "tax_fee_recipient",
+          "value": "admin"
+      }
+  ],
+  "line_items": [
+      {
+          "id": 17999,
+          "name": "Bolsón de 5kg + Maple de huevos de gallinas pastoriles",
+          "product_id": 7697,
+          "variation_id": 0,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "17640.00",
+          "subtotal_tax": "0.00",
+          "total": "17640.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198545,
+                  "key": "_reduced_stock",
+                  "value": "1",
+                  "display_key": "_reduced_stock",
+                  "display_value": "1"
+              },
+              {
+                  "id": 198601,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198602,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198603,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 17640,
+          "image": {
+              "id": "10741",
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/06/WhatsApp-Image-2024-10-25-at-10.29.36-PM-2.jpeg"
+          },
+          "parent_name": null
+      },
+      {
+          "id": 18000,
+          "name": "Batata Boniato/Beauregard 1kg Agroecológica",
+          "product_id": 6479,
+          "variation_id": 0,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "2000.00",
+          "subtotal_tax": "0.00",
+          "total": "2000.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198604,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198605,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198606,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 2000,
+          "image": {
+              "id": "6480",
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/03/batatazanahoria.jpeg"
+          },
+          "parent_name": null
+      },
+      {
+          "id": 18001,
+          "name": "Mango agroecológico sin fraccionar, precio por kg",
+          "product_id": 11489,
+          "variation_id": 0,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "5120.00",
+          "subtotal_tax": "0.00",
+          "total": "5120.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198607,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198608,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198609,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 5120,
+          "image": {
+              "id": "11491",
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/12/mangopcr.png"
+          },
+          "parent_name": null
+      },
+      {
+          "id": 18002,
+          "name": "Naranja 1 kg agroecológica",
+          "product_id": 5143,
+          "variation_id": 0,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "1370.00",
+          "subtotal_tax": "0.00",
+          "total": "1370.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198610,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198611,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198612,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 1370,
+          "image": {
+              "id": "10755",
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/01/naranjapcr.png"
+          },
+          "parent_name": null
+      },
+      {
+          "id": 18003,
+          "name": "Zapallito 1kg agroecológico",
+          "product_id": 5971,
+          "variation_id": 0,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "1200.00",
+          "subtotal_tax": "0.00",
+          "total": "1200.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198613,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198614,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198615,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 1200,
+          "image": {
+              "id": "8834",
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/03/IMG_20240309_150453_PORTRAIT-scaled.jpg"
+          },
+          "parent_name": null
+      },
+      {
+          "id": 18004,
+          "name": "Chucrut \"Herr Chuc\" 360g",
+          "product_id": 8244,
+          "variation_id": 0,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "4400.00",
+          "subtotal_tax": "0.00",
+          "total": "4400.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198616,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198617,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198618,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 4400,
+          "image": {
+              "id": "8245",
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/07/chucrut.jpeg"
+          },
+          "parent_name": null
+      },
+      {
+          "id": 18005,
+          "name": "Plantines Agroecológicos - Orégano",
+          "product_id": 8913,
+          "variation_id": 8916,
+          "quantity": 1,
+          "tax_class": "",
+          "subtotal": "600.00",
+          "subtotal_tax": "0.00",
+          "total": "600.00",
+          "total_tax": "0.00",
+          "taxes": [],
+          "meta_data": [
+              {
+                  "id": 198600,
+                  "key": "tipo",
+                  "value": "Orégano",
+                  "display_key": "Tipo",
+                  "display_value": "Orégano"
+              },
+              {
+                  "id": 198619,
+                  "key": "_dokan_commission_rate",
+                  "value": "0",
+                  "display_key": "_dokan_commission_rate",
+                  "display_value": "0"
+              },
+              {
+                  "id": 198620,
+                  "key": "_dokan_commission_type",
+                  "value": "flat",
+                  "display_key": "_dokan_commission_type",
+                  "display_value": "flat"
+              },
+              {
+                  "id": 198621,
+                  "key": "_dokan_additional_fee",
+                  "value": "0",
+                  "display_key": "_dokan_additional_fee",
+                  "display_value": "0"
+              }
+          ],
+          "sku": "",
+          "price": 600,
+          "image": {
+              "id": 9089,
+              "src": "https://hsv.com.ar/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-31-at-2.51.08-PM.jpeg"
+          },
+          "parent_name": "Plantines Agroecológicos"
+      }
+  ],
+  "tax_lines": [],
+  "shipping_lines": [],
+  "fee_lines": [],
+  "coupon_lines": [],
+  "refunds": [],
+  "payment_url": "https://hsv.com.ar/checkout/order-pay/11693/?pay_for_order=true&key=wc_order_ngTGqUqHHiFpm",
+  "is_editable": false,
+  "needs_payment": false,
+  "needs_processing": true,
+  "date_created_gmt": "2024-12-11T19:18:42",
+  "date_modified_gmt": "2024-12-11T19:18:44",
+  "date_completed_gmt": null,
+  "date_paid_gmt": "2024-12-11T19:18:42",
+  "currency_symbol": "$",
+  "stores": [
+      {
+          "id": 1,
+          "name": "Siempreverde",
+          "shop_name": "Siempreverde",
+          "url": "https://hsv.com.ar/vendedor/siempreverde/",
+          "address": {
+              "street_1": "",
+              "street_2": "",
+              "city": "",
+              "zip": "",
+              "country": "AR",
+              "state": ""
+          }
+      }
+  ],
+  "store": {
+      "id": 1,
+      "name": "Siempreverde",
+      "shop_name": "Siempreverde",
+      "url": "https://hsv.com.ar/vendedor/siempreverde/",
+      "address": {
+          "street_1": "",
+          "street_2": "",
+          "city": "",
+          "zip": "",
+          "country": "AR",
+          "state": ""
+      }
+  },
+  "_links": {
+      "self": [
+          {
+              "href": "https://hsv.com.ar/wp-json/wc/v3/orders/11693",
+              "targetHints": {
+                  "allow": [
+                      "GET",
+                      "POST",
+                      "PUT",
+                      "PATCH",
+                      "DELETE"
+                  ]
+              }
+          }
+      ],
+      "collection": [
+          {
+              "href": "https://hsv.com.ar/wp-json/wc/v3/orders"
+          }
+      ],
+      "customer": [
+          {
+              "href": "https://hsv.com.ar/wp-json/wc/v3/customers/70"
+          }
+      ],
+      "up": [
+          {
+              "href": "https://hsv.com.ar/wp-json/wc/v3/orders/11692"
+          }
+      ]
+  }
+}
