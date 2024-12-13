@@ -7,8 +7,7 @@
 
 //Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
-import { orderListMock } from "../db/mocks"
-import { getColumnsLabelArray, addKeyForMapping } from "../util/formatOrdersForUI"
+import { ORDERSLABELS } from "./config/ordersLabels"
 import { OrderDetail } from "./"
 import { type order } from '../types'
 
@@ -24,28 +23,25 @@ interface OrderListProps {
  * 
 */
 export function OrdersList({orders}: OrderListProps): JSX.Element{
-  // Generate column definitions from the data keys.
-  const columns = getColumnsLabelArray(orders)
-  // Format data into rows for the table.
-  const orderListWithKey = addKeyForMapping(orders)
   return (
     <Table className="m-4" aria-label="Example table with dynamic content">
       <TableHeader>
-        {columns.map((column) => (
-          <TableColumn key={column.key}>{column.label}</TableColumn>
-        ))}
+          <TableColumn key={ORDERSLABELS.ORDER_NUMBER}>{ORDERSLABELS.ORDER_NUMBER}</TableColumn>
+          <TableColumn key={ORDERSLABELS.PRODUCTS}>{ORDERSLABELS.PRODUCTS}</TableColumn>
+          <TableColumn key={ORDERSLABELS.BILLING_FULL_NAME}>{ORDERSLABELS.BILLING_FULL_NAME}</TableColumn>
+          <TableColumn key={ORDERSLABELS.ORDER_TOTAL}>{ORDERSLABELS.ORDER_TOTAL}</TableColumn>
+          <TableColumn key={ORDERSLABELS.ORDER_DATE}>{ORDERSLABELS.ORDER_DATE}</TableColumn>
       </TableHeader>
       <TableBody>
-        {orderListWithKey.map((order) => (
-          <TableRow key={order.key}>
+        {orders.map((order) => (
+          <TableRow key={order.order_number}>
               <TableCell key={order.order_number}>{order.order_number}</TableCell>
-              <TableCell key="Products detail">
+              <TableCell key={ORDERSLABELS.PRODUCTS}>
                 <OrderDetail order={order}></OrderDetail>
               </TableCell>
               <TableCell key={order.billing_full_name}>{order.billing_full_name}</TableCell>
               <TableCell key={order.order_total}>{order.order_total}</TableCell>
               <TableCell key={order.order_date}>{order.order_date}</TableCell>
-              
           </TableRow>
         ))}
       </TableBody>
