@@ -1,4 +1,4 @@
-export const ORDERSLABELS = {
+export const ORDER_LABEL = {
   ORDER_NUMBER: "Order's number",
   PRODUCTS: "Order's detail",
   BILLING_FULL_NAME: 'Client',

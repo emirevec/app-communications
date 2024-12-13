@@ -7,8 +7,8 @@
 
 //Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
-import { ORDERSLABELS } from "./config/ordersLabels"
-import { OrderDetail } from "./"
+import { ORDER_LABEL } from "@/features/orders/components/config/orderLabel"
+import { OrderDetail } from "@/features/orders/components/OrderDetail"
 import { type order } from '@/features/orders/types/order'
 
 interface OrderListProps {
@@ -26,17 +26,17 @@ export function OrdersList({orders}: OrderListProps): JSX.Element{
   return (
     <Table className="m-4" aria-label="Example table with dynamic content">
       <TableHeader>
-          <TableColumn key={ORDERSLABELS.ORDER_NUMBER}>{ORDERSLABELS.ORDER_NUMBER}</TableColumn>
-          <TableColumn key={ORDERSLABELS.PRODUCTS}>{ORDERSLABELS.PRODUCTS}</TableColumn>
-          <TableColumn key={ORDERSLABELS.BILLING_FULL_NAME}>{ORDERSLABELS.BILLING_FULL_NAME}</TableColumn>
-          <TableColumn key={ORDERSLABELS.ORDER_TOTAL}>{ORDERSLABELS.ORDER_TOTAL}</TableColumn>
-          <TableColumn key={ORDERSLABELS.ORDER_DATE}>{ORDERSLABELS.ORDER_DATE}</TableColumn>
+          <TableColumn key={ORDER_LABEL.ORDER_NUMBER}>{ORDER_LABEL.ORDER_NUMBER}</TableColumn>
+          <TableColumn key={ORDER_LABEL.PRODUCTS}>{ORDER_LABEL.PRODUCTS}</TableColumn>
+          <TableColumn key={ORDER_LABEL.BILLING_FULL_NAME}>{ORDER_LABEL.BILLING_FULL_NAME}</TableColumn>
+          <TableColumn key={ORDER_LABEL.ORDER_TOTAL}>{ORDER_LABEL.ORDER_TOTAL}</TableColumn>
+          <TableColumn key={ORDER_LABEL.ORDER_DATE}>{ORDER_LABEL.ORDER_DATE}</TableColumn>
       </TableHeader>
       <TableBody>
         {orders.map((order) => (
           <TableRow key={order.order_number}>
               <TableCell key={order.order_number}>{order.order_number}</TableCell>
-              <TableCell key={ORDERSLABELS.PRODUCTS}>
+              <TableCell key={ORDER_LABEL.PRODUCTS}>
                 <OrderDetail order={order}></OrderDetail>
               </TableCell>
               <TableCell key={order.billing_full_name}>{order.billing_full_name}</TableCell>

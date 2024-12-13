@@ -9,7 +9,7 @@
 import { useState } from "react"
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react"
 import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@nextui-org/react"
-import { PRODUCTSLABELS } from "./config/productsLabels"
+import { PRODUCT_LABEL } from "@/features/orders/components/config/productLabel"
 import type { order } from "@/features/orders/types/order"
 
 interface OrderProps {
@@ -46,10 +46,10 @@ export function OrderDetail({ order: order }: OrderProps): JSX.Element {
                 <p>{order.order_number}</p>
                 <Table className="m-4" aria-label="Example table with dynamic content">
                   <TableHeader>
-                      <TableColumn key={PRODUCTSLABELS.QTY}>{PRODUCTSLABELS.QTY}</TableColumn>
-                      <TableColumn key={PRODUCTSLABELS.PRODUCT_NAME}>{PRODUCTSLABELS.PRODUCT_NAME}</TableColumn>
-                      <TableColumn key={PRODUCTSLABELS.PRICE}>{PRODUCTSLABELS.PRICE}</TableColumn>
-                      <TableColumn key={PRODUCTSLABELS.SUB_TOTAL}>{PRODUCTSLABELS.SUB_TOTAL}</TableColumn>
+                      <TableColumn key={PRODUCT_LABEL.QTY}>{PRODUCT_LABEL.QTY}</TableColumn>
+                      <TableColumn key={PRODUCT_LABEL.PRODUCT_NAME}>{PRODUCT_LABEL.PRODUCT_NAME}</TableColumn>
+                      <TableColumn key={PRODUCT_LABEL.PRICE}>{PRODUCT_LABEL.PRICE}</TableColumn>
+                      <TableColumn key={PRODUCT_LABEL.SUB_TOTAL}>{PRODUCT_LABEL.SUB_TOTAL}</TableColumn>
                   </TableHeader>
                   <TableBody>
                     {order.products.map((product) => (
@@ -57,7 +57,7 @@ export function OrderDetail({ order: order }: OrderProps): JSX.Element {
                         <TableCell key={product.qty}>{product.qty}</TableCell>
                         <TableCell key={product.product_name}>{product.product_name}</TableCell>
                         <TableCell key={product.price}>{product.price}</TableCell>
-                        <TableCell key={PRODUCTSLABELS.SUB_TOTAL}>{product.price * product.qty}</TableCell>
+                        <TableCell key={PRODUCT_LABEL.SUB_TOTAL}>{product.price * product.qty}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
