@@ -10,7 +10,7 @@ import { useState } from "react"
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react"
 import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@nextui-org/react"
 import { PRODUCTSLABELS } from "./config/productsLabels"
-import type { order } from "../types"
+import type { order } from "@/features/orders/types/order"
 
 interface OrderProps {
   order: order

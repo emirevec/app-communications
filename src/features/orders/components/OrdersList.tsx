@@ -9,7 +9,7 @@
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
 import { ORDERSLABELS } from "./config/ordersLabels"
 import { OrderDetail } from "./"
-import { type order } from '../types'
+import { type order } from '@/features/orders/types/order'
 
 interface OrderListProps {
   orders: order[]
