@@ -22,9 +22,12 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
       throw new Error(`Error fetching orders: ${response.status} ${response.statusText}. Details: ${errorDetails}`);
     }
 
-    //Filter by Siempreverde and Seres sellers
+    //Filter by Siempreverde
     const orders = await response.json()
-    const ordersChild = orders.filter((order: any) => order.parent_id !== 0 && order.store.id === 1)
+    console.log("WooCommerceApi", orders.length)
+    const ordersChild = orders.filter((order: any) => order.parent_id !== 0)
+    //console.log(ordersChild)
+    //&& order.store.id === 1
     const ordersSV = ordersChild.map((order: any)=>({
       order_number: order.id,
       products: [
@@ -47,7 +50,6 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
     throw error;
   }
 }
-
 
 /* export const ApiDataSource = (): Api => ({
   endpoint: '',
