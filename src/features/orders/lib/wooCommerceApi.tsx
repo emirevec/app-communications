@@ -3,10 +3,12 @@ interface FetchByDateArgs {
   before: string; // ISO 8601 date  
 }
 
+//WIP
 export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateArgs) {
   const url: string | undefined = process.env.WOO_COMMERCE_API_URL
   const consumerKey: string | undefined = process.env.WOO_COMMERCE_CONSUMER_KEY
   const consumerSecret: string | undefined = process.env.WOO_COMMERCE_CONSUMER_SECRET
+
   const endpoint = `${url}/orders?after=${encodeURIComponent(after)}&before=${encodeURIComponent(before)}`
   const authHeader = Buffer.from(`${consumerKey}:${consumerSecret}`).toString("base64")
 
@@ -22,14 +24,19 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
       throw new Error(`Error fetching orders: ${response.status} ${response.statusText}. Details: ${errorDetails}`);
     }
 
-    //Filter by Siempreverde
+    //Filter by child orders.
     const orders = await response.json()
     console.log("WooCommerceApi", orders.length)
     const ordersChild = orders.filter((order: any) => order.parent_id !== 0)
     //console.log(ordersChild)
-    //&& order.store.id === 1
+
+    //Filter by Siempreverde.
+    //order.store.id === 1
+
+    //Build the order list for UI.
     const ordersSV = ordersChild.map((order: any)=>({
       order_number: order.id,
+      //Return only the mocked product for the moment. Fix it latter.
       products: [
         {
           seller: "Siempreverde",
@@ -50,12 +57,3 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
     throw error;
   }
 }
-
-/* export const ApiDataSource = (): Api => ({
-  endpoint: '',
-  async getAllProducts () {
-      const res = await fetch(`${this.endpoint}/products`)
-      const data = await res.json()
-      return data
-  }
-}) */

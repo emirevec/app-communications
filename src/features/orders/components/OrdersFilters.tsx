@@ -1,20 +1,6 @@
-/**
- * @file OrdersFilters Component
- * @module OrdersFilters
- * @description Renders filters for applying to the list of orders.
- */
-
-// Import statements
 import {Button, Card, CardBody, DateRangePicker, Input} from "@nextui-org/react";
 import { ORDER_LABEL } from "@/features/orders/components/config/orderLabel"
 
-/**
- * OrdersFilters Component
- *
- * @description The `OrdersFilters` component generates filter fileds for applying to the list of orders.
- * @returns {JSX.Element} A card containing order filters.
- * 
-*/
 export function OrdersFilters(): JSX.Element{
   return(
     <Card className="m-1 mb-4 flex flex-col p-4 gap-4">

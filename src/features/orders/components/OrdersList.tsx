@@ -1,11 +1,5 @@
-/**
- * @file OrdersList Component
- * @module OrdersList
- * @description Renders a dynamic table displaying a list of orders.
- */
 "use client"
 
-//Import statements
 import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} from "@nextui-org/react"
 import { ORDER_LABEL } from "@/features/orders/components/config/orderLabel"
 import { OrderDetail } from "@/features/orders/components/OrderDetail"
@@ -15,13 +9,6 @@ interface OrderListProps {
   orders: order[]
 }
 
-/**
- * OrdersList Component
- *
- * @description The `OrdersList` component generates a dynamic table.
- * @returns {JSX.Element} A table containing order details.
- * 
-*/
 export function OrdersList({orders}: OrderListProps): JSX.Element{
   return (
     <Table className="m-4" aria-label="Example table with dynamic content">

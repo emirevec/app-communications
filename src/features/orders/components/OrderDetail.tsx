@@ -1,11 +1,5 @@
-/**
- * @file OrderDetail Component
- * @module OrderDetail
- * @description Modal for rendering order's content.
- */
 "use client"
 
-//Import statements.
 import { useState } from "react"
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react"
 import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell } from "@nextui-org/react"
@@ -16,13 +10,6 @@ interface OrderProps {
   order: order
 }
 
-/**
- * OrderDetail Component
- *
- * @description The `Order` component opens a modal for rendering order's content.
- * @returns {JSX.Element} A modal containing full order details.
- * 
-*/
 export function OrderDetail({ order: order }: OrderProps): JSX.Element {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = useState("xl")
