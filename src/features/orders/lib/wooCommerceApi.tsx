@@ -3,6 +3,9 @@ interface FetchByDateArgs {
   before: string; // ISO 8601 date  
 }
 
+const wooApiLog = ""
+
+
 //WIP
 export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateArgs) {
   const url: string | undefined = process.env.WOO_COMMERCE_API_URL
@@ -26,7 +29,8 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
 
     //Filter by child orders.
     const orders = await response.json()
-    console.log("WooCommerceApi", orders.length)
+    wooApiLog.info(orders.length)
+    //console.log("WooCommerceApi", orders.length)
     const ordersChild = orders.filter((order: any) => order.parent_id !== 0)
     //console.log(ordersChild)
 
