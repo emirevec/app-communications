@@ -3,16 +3,13 @@ interface FetchByDateArgs {
   before: string; // ISO 8601 date  
 }
 
-const wooApiLog = ""
-
-
 //WIP
-export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateArgs) {
+export async function fetchWooCommerceOrdersByDate({ after, before }: FetchByDateArgs) {
   const url: string | undefined = process.env.WOO_COMMERCE_API_URL
   const consumerKey: string | undefined = process.env.WOO_COMMERCE_CONSUMER_KEY
   const consumerSecret: string | undefined = process.env.WOO_COMMERCE_CONSUMER_SECRET
 
-  const endpoint = `${url}/orders?after=${encodeURIComponent(after)}&before=${encodeURIComponent(before)}`
+  const endpoint = `${url}/orders?after=${encodeURIComponent(after)}&before=${encodeURIComponent(before)}&include=11515`
   const authHeader = Buffer.from(`${consumerKey}:${consumerSecret}`).toString("base64")
 
   try {
@@ -27,33 +24,38 @@ export async function fetchWooCommerceOrdersByDate({after, before}: FetchByDateA
       throw new Error(`Error fetching orders: ${response.status} ${response.statusText}. Details: ${errorDetails}`);
     }
 
-    //Filter by child orders.
+    //Filter by child orders and Siempreverde store.
     const orders = await response.json()
-    wooApiLog.info(orders.length)
-    //console.log("WooCommerceApi", orders.length)
-    const ordersChild = orders.filter((order: any) => order.parent_id !== 0)
-    //console.log(ordersChild)
 
-    //Filter by Siempreverde.
-    //order.store.id === 1
+    console.log("WooCommerceApi", orders[0])
+    //console.log("WooCommerceApi", orders[11])
+    //.line_items[0].meta_data
+
+    const ordersChild = await orders.filter((order: any) => /* order.parent_id === 0  && */ order.store.id === 1)
+    
+    /* orders.map((order: any) => (
+      console.log(order.store.id)
+    ))
+ */
+    console.log("WooCommerceApi", ordersChild.length)
 
     //Build the order list for UI.
-    const ordersSV = ordersChild.map((order: any)=>({
-      order_number: order.id,
-      //Return only the mocked product for the moment. Fix it latter.
-      products: [
-        {
-          seller: "Siempreverde",
-          qty: 1,
-          product_name: "Bolsón 4/5 kg Agroecológico + Bolsón de Pesada 3 kg + Maple de Huevos de gallinas pastoriles",
-          price: 21000.00,
-          tags: "Agroecológico,PAC"
-        }
-      ],
-      billing_full_name: order.billing.first_name + " " + order.billing.last_name,
-      order_total: order.total,
-      order_date: order.date_created
-    }))
+    const ordersSV = ordersChild.map((order: any) => {
+      const aux = order.line_items.map((line: any) =>({
+        qty: line.quantity,
+        product_name: line.name,
+        price: line.price
+      }))
+      return {
+        order_number: order.id,
+        products: aux,
+        billing_full_name: order.billing.first_name + " " + order.billing.last_name,
+        order_total: order.total,
+        order_date: order.date_created
+      }
+    })
+
+    console.log("WooCommerceApi", ordersSV.length)
 
     return await ordersSV
   } catch (error) {
