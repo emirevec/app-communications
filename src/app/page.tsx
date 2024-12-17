@@ -10,7 +10,7 @@ export default async function Home() {
     <>
       <h1>CommunApp</h1>
       <OrdersFilters/>
-      <OrdersList orders={orders}/>
+      {/* <OrdersList orders={orders}/> */}
     </>
   )
 }
