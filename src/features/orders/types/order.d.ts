@@ -1,9 +1,12 @@
-import type { product } from "./product"
+import type { Product } from "./product"
 
-export interface order {
+export interface Order {
   order_number: number,
-  products: product[]
-  billing_full_name: string,
+  order_date: string,
   order_total: number,
-  order_date: string
+  customer_id: number,
+  billing_full_name: string,
+  products: Product[]
+  store: Store,
+  multple_id: string
 }

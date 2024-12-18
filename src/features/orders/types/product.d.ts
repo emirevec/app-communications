@@ -1,4 +1,4 @@
-export interface product {
+export interface Product {
   seller: string,
   qty: number
   product_name: string,

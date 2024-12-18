@@ -1,10 +1,11 @@
+import type { OrderWooCommerce } from "../types/orderWooCommerce";
+
 interface FetchByDateArgs {
   after: string; // ISO 8601 date
   before: string; // ISO 8601 date  
 }
 
-//WIP
-export async function fetchWooCommerceOrdersByDate({ after, before }: FetchByDateArgs) {
+export async function fetchWooCommerceOrdersByDate({ after, before }: FetchByDateArgs): Promise<OrderWooCommerce[]> {
   const url: string | undefined = process.env.WOO_COMMERCE_API_URL
   const consumerKey: string | undefined = process.env.WOO_COMMERCE_CONSUMER_KEY
   const consumerSecret: string | undefined = process.env.WOO_COMMERCE_CONSUMER_SECRET
