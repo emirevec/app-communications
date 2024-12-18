@@ -1,7 +1,7 @@
 export const ORDER_LABEL = {
-  ORDER_NUMBER: "Order's number",
-  PRODUCTS: "Order's detail",
+  ORDER_NUMBER: "Order numbers",
+  PRODUCTS: "Order detail",
   BILLING_FULL_NAME: 'Client',
-  ORDER_TOTAL: "Order's total amount",
-  ORDER_DATE: "Order's date"
+  ORDER_TOTAL: "Order total amount",
+  ORDER_DATE: "Order date"
 }
