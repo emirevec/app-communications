@@ -9,7 +9,7 @@ export async function fetchWooCommerceOrdersByDate({ after, before }: FetchByDat
   const url: string | undefined = process.env.WOO_COMMERCE_API_URL
   const consumerKey: string | undefined = process.env.WOO_COMMERCE_CONSUMER_KEY
   const consumerSecret: string | undefined = process.env.WOO_COMMERCE_CONSUMER_SECRET
-  const FIELDS: string = "id,date_created,total,billing,line_items,store"
+  const FIELDS: string = "id,customer_id,date_created,total,billing,line_items,store"
   const urlPrefix: string = `${url}/orders?_fields=${FIELDS}&after=${encodeURIComponent(after)}&before=${encodeURIComponent(before)}`
   const authHeader = Buffer.from(`${consumerKey}:${consumerSecret}`).toString("base64")
 
